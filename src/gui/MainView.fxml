@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <content>
+      <VBox prefHeight="399.0" prefWidth="531.0">
+         <children>
+            <MenuBar>
+              <menus>
+                  <Menu mnemonicParsing="false" text="Dashboard">
+                     <items>
+                        <MenuItem fx:id="menuItemLastLoans" mnemonicParsing="false" onAction="#onMenuItemLastLoansAction" text="Last Loans" />
+                        <MenuItem fx:id="menuItemNextDevolutions" mnemonicParsing="false" onAction="#onMenuItemNextDevolutionsAction" text="Next Devolutions" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Services">
+                    <items>
+                      <MenuItem fx:id="menuItemLoans" mnemonicParsing="false" onAction="#onMenuItemLoanAction" text="Loans" />
+                        <MenuItem fx:id="menuItemReservations" mnemonicParsing="false" onAction="#onMenuItemReservationAction" text="Reservations" />
+                    </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Registration">
+                  <items>
+                        <MenuItem fx:id="menuItemUser" mnemonicParsing="false" onAction="#onMenuItemUserAction" text="User" />
+                    <MenuItem fx:id="menuItemAuthor" mnemonicParsing="false" onAction="#onMenuItemAuthorAction" text="Author" />
+                        <MenuItem fx:id="menuItemGenre" mnemonicParsing="false" onAction="#onMenuItemGenreAction" text="Genre" />
+                        <MenuItem fx:id="menuItemBook" mnemonicParsing="false" onAction="#onMenuItemBookAction" text="Book" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Search">
+                     <items>
+                        <MenuItem fx:id="menuItemBooksByAuthor" mnemonicParsing="false" onAction="#onMenuItemBookByAuthorAction" text="Books By Author" />
+                        <MenuItem fx:id="menuItemBooksByGenre" mnemonicParsing="false" onAction="#onMenuItemBookByGenreAction" text="Books By Genre" />
+                        <MenuItem fx:id="menuItemBooksByName" mnemonicParsing="false" onAction="#onMenuItemBookByTitleAction" text="Books By Title" />
+                        <MenuItem fx:id="menuItemUsersByName" mnemonicParsing="false" onAction="#onMenuItemUserByNameAction" text="Users By Name" />
+                        <MenuItem fx:id="menuItemUsersByEmail" mnemonicParsing="false" onAction="#onMenuItemUserByEmailAction" text="Users By Email" />
+                        <MenuItem fx:id="menuItemUsersById" mnemonicParsing="false" onAction="#onMenuItemUserByIdAction" text="Users By Id" />
+                        <MenuItem fx:id="menuItemReservationById" mnemonicParsing="false" onAction="#onMenuItemReservationByIdAction" text="Reservation By Id" />
+                        <MenuItem fx:id="menuItemLoanById" mnemonicParsing="false" onAction="#onMenuItemLoanByIdAction" text="Loan By Id" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Report">
+                     <items>
+                        <MenuItem fx:id="menuItemReportLoans" mnemonicParsing="false" onAction="#onMenuItemReportLoansAction" text="Loans" />
+                        <MenuItem fx:id="menuItemReportReservations" mnemonicParsing="false" onAction="#onMenuItemReportReservationsAction" text="Reservations" />
+                     </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ImageView fitHeight="370.0" fitWidth="670.0" nodeOrientation="INHERIT" pickOnBounds="true">
+               <image>
+                  <Image url="@../../imgs/library.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
